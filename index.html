@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rock-Paper-Scissor</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+
+<body>
+    <div class="screen">
+
+        <div class="ruleScreen">
+
+
+            <div class="rules">
+
+                <div class="textClose">
+                    <div class="text">RULES</div>
+                    <div id="close" class="close"><img src="images/icon-close.svg" alt=""></div>
+                </div>
+
+                <div class="ruleImage"><img src="images/image-rules.svg" alt=""></div>
+
+            </div>
+        </div>
+
+
+        <div class="playGround">
+
+            <div class="scoreBox">
+                <div class="scoreBorder">
+                    <div class="scoreText">ROCK<br>PAPER<br>SCISSORS</div>
+                    <div class="playerScore">
+                        <div class="scoreT">SCORE</div>
+                        <div class="scoreN">0</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Ground">
+
+                <div class="playArea1">
+
+                    <div class="bgGround">
+                        <img src="images/bg-triangle.svg" alt="">
+                    </div>
+                    <div class="choosingIcons">
+                        <div class="upperBox">
+                            <div class="paper"><img src="images/icon-paper.svg" alt=""></div>
+                            <div class="scissor"><img src="images/icon-scissors.svg" alt=""></div>
+                        </div>
+                        <div class="lowerBox">
+                            <div class="rock"><img src="images/icon-rock.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playArea2">
+                    <div class="userPick">
+                        <div class="userText">YOU PICKED</div>
+                        <div class="userChoice"></div>
+                    </div>
+                    <div class="housePick">
+                        <div class="houseText">THE HOUSE PICKED</div>
+                        <div class="houseChoice"><img class="house" src="images/icon-paper.svg" alt=""></div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="end">
+                <div class="ruleToggle">RULES</div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8" async defer></script>
+</body>
+
+</html>
