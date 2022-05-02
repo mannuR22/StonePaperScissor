@@ -163,15 +163,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 37vh;
-    width: 37vh;
+    position: fixed;
+    height: 21em;
+    width: 21em;
 }
 
 .choosingIcons {
     display: flex;
     position: fixed;
-    width: 32vw;
-    height: 43vh;
+    width: 21em;
+    height: 21em;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -191,31 +192,33 @@ body{
 .paper {
     background: #dbdbdb;
     border: #5671f4 solid 1.2em;
-    border-radius: 7em;
-    height: 8em;
-    width: 8em;
+    border-radius: 120px;
+    height: 120px;
+    width: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 2em;
 }
 
 .scissor {
     background: #dbdbdb;
     border: #eaa826 solid 1.2em;
-    border-radius: 7em;
-    height: 8em;
-    width: 8em;
+    border-radius: 120px;
+    height: 120px;
+    width: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 2em
 }
 
 .rock {
     background: #dbdbdb;
     border: #dd3755 solid 1.2em;
-    border-radius: 7em;
-    height: 8em;
-    width: 8em;
+    border-radius: 120px;
+    height: 120px;
+    width: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -226,6 +229,8 @@ body{
     width: 100vw;
     display:flex;
     justify-content: center;
+    position: relative;
+    
 }
 
 .userPick {
@@ -236,7 +241,7 @@ body{
     width: 12em;
     /* border: white solid; */
     justify-content: space-between;
-    margin-right: 10em;
+    margin-right: 4em;
 }
 
 .housePick {
@@ -247,7 +252,7 @@ body{
     width: 12em;
     /* border: white solid; */
     justify-content: space-between;
-    margin-left: 10em;
+    margin-left: 4em;
 }
 
 .userText {
@@ -261,19 +266,27 @@ body{
     justify-content: center;
     align-items: center;
     background: white;
-    height: 120px;
-    width: 120px;
-    border-radius: 90px;
+    height: 11em;
+    width: 11em;
+    border-radius: 8em;
     border: solid 28px;
 }
 
+.userChoice img{
+    width: auto;
+    height: 50%;
+}
 .user{
 
 }
 
-.housePick{
-
-}
+/* .remaining {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8em;
+    width: 8em;
+} */
 
 .houseText{
     font-family: 'Akshar', sans-serif;
@@ -281,8 +294,20 @@ body{
     font-size: 1.4em;
 }
 
-.houseChoice{
+.houseChoice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 11em;
+    width: 11em;
+    border-radius: 8em;
+    border: solid 28px;
+}
 
+.houseChoice img{
+    width: auto;
+    height: 50%;
 }
 
 .house{
@@ -309,4 +334,54 @@ body{
     align-items: center;
     font-size: 1em;
     justify-content: center;
+}
+
+.fixedScreen{
+    display: flex;
+
+}
+
+.hoverScreen{
+    position: absolute;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.resultText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+}
+.playAgain {
+    width: 11em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dd3755;
+    background: white;
+   
+}
+
+.remaining{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+.hoverHouse {
+    position: absolute;
+    height: 11em;
+    width: 11em;
+    background: #131738;
+    border-radius: 11em;
+    z-index: -1;
 }
