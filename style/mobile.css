@@ -1,0 +1,164 @@
+
+.rules {
+    background: white;
+    height: auto;
+    width: 89%;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    aspect-ratio: 1/1;
+}
+
+.bgGround {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/bg-triangle.svg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    /* margin-left: 8%; */
+    aspect-ratio: 1/1;
+    margin-right: 7%;
+}
+
+.paper {
+    background: #dbdbdb;
+    border: #5671f4 solid 1.2em;
+    border-radius: 120px;
+    height: 105px;
+    width: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+}
+
+.rock {
+    background: #dbdbdb;
+    border: #dd3755 solid 1.2em;
+    border-radius: 120px;
+    height: 105px;
+    width: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scissor {
+    background: #dbdbdb;
+    border: #eaa826 solid 1.2em;
+    border-radius: 120px;
+    height: 105px;
+    width: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -3%;
+}
+
+.upperBox {
+    display: flex;
+    height: 17%;
+    width: 125%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-left: 1%; */
+}
+.lowerBox {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    margin-right: -5%;
+}
+
+.scoreBorder {
+    display: flex;
+    border: #ffffff80 solid 3px;
+    border-radius: 1em;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    height: 45%;
+    padding: 2vh;
+}
+
+.hoverScreen {
+    position: unset;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    flex-direction: column-reverse;
+}
+
+.playArea2 {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    flex-direction: column-reverse;
+}
+
+.userPick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20em;
+    width: 12em;
+    /* border: white solid; */
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 0px;
+}
+
+.userChoice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: auto;
+    width: 7em;
+    aspect-ratio: 1/1;
+    border-radius: 8em;
+    border: solid 1.2em;
+}
+
+.housePick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20em;
+    width: 12em;
+    /* border: white solid; */
+    justify-content: space-around;
+    margin-right: 20px;
+    margin-left: 0px;
+}
+.houseChoice {
+    height: auto;
+    width: 9.4em;
+    aspect-ratio: 1/1;
+    background: radial-gradient(#172141, #090e1c);
+    border-radius: 11em;
+}
+.houseChoiceAddOn {
+    display: flex;
+    background: white;
+    height: auto;
+    aspect-ratio: 1/1;
+    width: 7em;
+    border-radius: 8em;
+    border: solid 1.2em;
+}
+
+.ruleToggle {
+    margin-right: 1em;
+
+}

@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Lato&display=swap');
+
+body{
+    height: 100%;
+    margin: 0;
+}
+
+.screen {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.ruleScreen {
+
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+    backdrop-filter: blur(7px);
+    background: #00000036;
+}
+
+.rules {
+    background: white;
+    height: 25em;
+    width: 25em;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.textClose {
+    display: flex;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: -webkit-fill-available;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.text {
+    font-size: 2em;
+    font-family: 'Akshar', sans-serif;
+}
+.close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.playGround {
+    background: radial-gradient(ellipse at top center,#1f3857, #131637);
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.scoreBox {
+    display: flex;
+    height: 25vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.scoreBorder {
+    display: flex;
+    border: #ffffff80 solid 3px;
+    border-radius: 1em;
+    width: 50vw;
+    justify-content: space-between;
+    align-items: center;
+    height: 11vh;
+    padding: 2vh;
+}
+
+.scoreText img {
+    height: 100%;
+    width: auto;
+}
+
+.playerScore {
+    background: white;
+    height: 100%;
+    /* width: 9%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 4px;
+    /* padding-left: 2em; */
+    /* padding-right: 2em; */
+    /* padding-top: 1em; */
+    /* padding-bottom: 1em; */
+    align-items: center;
+}
+.scoreT {
+    color: #3f51b5;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.scoreN {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 59px;
+    line-height: 53px;
+    color: #59556e;
+    font-weight: 600;
+}.scoreN {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 59px;
+    line-height: 53px;
+    color: #59556e;
+    font-weight: 600;
+}
+
+
+.Ground {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.playArea1 {
+
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bgGround {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/bg-triangle.svg');
+    
+    height: 21em;
+    width: 21em;
+    background-repeat: no-repeat;
+}
+
+.choosingIcons {
+    display: flex;
+   
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upperBox {
+    display: flex;
+    height: 42%;
+    width: 120%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-left: 1%; */
+}
+
+.lowerBox {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    margin-right: 6%;
+}
+
+.paper {
+    background: #dbdbdb;
+    border: #5671f4 solid 1.2em;
+    border-radius: 120px;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.scissor {
+    background: #dbdbdb;
+    border: #eaa826 solid 1.2em;
+    border-radius: 120px;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.rock {
+    background: #dbdbdb;
+    border: #dd3755 solid 1.2em;
+    border-radius: 120px;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.playArea2 {
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.userPick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20em;
+    width: 12em;
+    /* border: white solid; */
+    justify-content: space-between;
+    margin-right: 4em;
+}
+
+.housePick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20em;
+    width: 12em;
+    /* border: white solid; */
+    justify-content: space-between;
+    margin-left: 4em;
+}
+
+.userText {
+    font-family: 'Akshar', sans-serif;
+    color: white;
+    font-size: 1.4em;
+}
+
+.userChoice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 11em;
+    width: 11em;
+    border-radius: 8em;
+    border: solid 2em;
+}
+
+.userChoice img{
+    width: auto;
+    height: 50%;
+}
+.user{
+
+}
+
+/* .remaining {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8em;
+    width: 8em;
+} */
+
+.houseText{
+    font-family: 'Akshar', sans-serif;
+    color: white;
+    font-size: 1.4em;
+}
+
+.houseChoiceAddOn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 11em;
+    width: 11em;
+    border-radius: 8em;
+    border: solid 2em;
+}
+
+.houseChoice img{
+    visibility: hidden;
+    width: auto;
+    height: 50%;
+}
+.houseChoiceAddOn img{
+    width: auto;
+    height: 50%;
+}
+
+.house{
+    
+}
+
+.end {
+    height: 7vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.ruleToggle {
+    margin-right: 2em;
+    border: #ffffff80 solid 3px;
+    height: auto;
+    width: 5em;
+    border-radius: 11px;
+    padding: 6px;
+    color: white;
+    font-family: 'Akshar', sans-serif;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    justify-content: center;
+}
+
+.fixedScreen{
+    display: flex;
+
+}
+
+.hoverScreen{
+    position: absolute;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.resultText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+}
+.playAgain {
+    width: 100%;
+    /* height: 48%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dd3755;
+    border-radius: 1em;
+    font-size: 0.8em;
+    background: white;
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
+}
+.remaining{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+.houseChoice{
+    height: 15em;
+    width: 15em;
+    background: radial-gradient(#172141, #090e1c);
+    border-radius: 11em;
+}

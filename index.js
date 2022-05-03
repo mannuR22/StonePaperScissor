@@ -7,13 +7,16 @@ $(document).ready(function () {
     var first = true;
     var userChoice;
     var score = 0;
-
+    $('.playerScore').css({
+        width: (document.querySelector('.playerScore').clientHeight).toString()
+    });
     //0 = draw, 1 = userWin, 2 = houseWin
     var result = 0;
 
+    var x = window.matchMedia("(max-width: 1080px)");
+
     function house() {
         var houseChoice = Math.floor(Math.random() * 3 + 1);
-        $(".houseChoice").hide();
         switch (houseChoice) {
             case 1:
                 $(".houseChoice").html('<img src="images/icon-rock.svg" alt="">');
@@ -31,35 +34,50 @@ $(document).ready(function () {
             default:
 
         };
-        whoWins(userChoice, houseChoice);
+
         setTimeout(function () {
-            $(".houseChoice").show(300);
+            $('#HouseChoice').hide();
+            $('#HouseChoice').removeClass('houseChoice', 500);
+            $('#HouseChoice').addClass('houseChoiceAddOn', 500);
+            $('#HouseChoice').fadeIn(500);
+
+
 
         }, 1000);
+
+        whoWins(userChoice, houseChoice);
 
         setTimeout(function () {
             $('.scoreN').text(score.toString());
 
-            $('.housePick').animate({
-                marginLeft: "10em"
-            }, {duration: 200, queue:  false});
+            if (!x.matches) {
+                $('.housePick').animate({
+                    marginLeft: "10em"
+                }, {
+                    duration: 200,
+                    queue: false
+                });
 
-            $('.userPick').animate({
-                marginRight: "10em"
-            }, {duration: 200, queue: false});
-            
-            
+                $('.userPick').animate({
+                    marginRight: "10em"
+                }, {
+                    duration: 200,
+                    queue: false
+                });
+            }
+
+
 
 
         }, 1500);
 
         setTimeout(function () {
             $('.playAgain').text('PLAY AGAIN')
-            if(result === 0){
+            if (result === 0) {
                 $('.resultText').text("DRAW");
-            }else if(result === 1) {
+            } else if (result === 1) {
                 $('.resultText').text("YOU WIN");
-            }else {
+            } else {
                 $('.resultText').text("YOU LOSE");
             }
             $('.hoverScreen').show(400);
@@ -70,8 +88,8 @@ $(document).ready(function () {
     }
 
     function whoWins(user, house) {
-        
-        if ((user === 1 && house === 3) || (user === 2 && house === 1) || (user === 3 && house === 2) ) {
+
+        if ((user === 1 && house === 3) || (user === 2 && house === 1) || (user === 3 && house === 2)) {
             //userWins
             score += 4;
             result = 1;
@@ -157,12 +175,22 @@ $(document).ready(function () {
     // $(".close").on("click",function(){
     //     $(".ruleScreen").fadeOut(300);
     // })
-    $('.playAgain').on('click', function(){
+    $('.playAgain').on('click', function () {
         $(".playArea2").hide();
         $('.hoverScreen').hide();
-        $('.playArea1').show();
-        $('.userPick').css({marginRight: "4em"});
-        $('.housePick').css({marginLeft: "4em"});
+        $('.playArea1').show(500);
+        
+        if(!x.matches){
+            $('.housePick').css({
+                marginLeft: "4em"
+            });
+            $('.userPick').css({
+                marginRight: "4em"
+            });
+        }
+        
+        $('#HouseChoice').addClass('houseChoice');
+        $('#HouseChoice').removeClass('houseChoiceAddOn');
     });
 
 
