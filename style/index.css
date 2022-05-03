@@ -60,7 +60,6 @@ body{
 
 
 
-
 .playGround {
     background: radial-gradient(ellipse at top center,#1f3857, #131637);
     position: absolute;
@@ -90,8 +89,12 @@ body{
     padding: 2vh;
 }
 
-.scoreText img {
+.scoreText {
     height: 100%;
+}
+
+.scoreText img {
+    height: 95%;
     width: auto;
 }
 
@@ -179,7 +182,7 @@ body{
 
 .upperBox {
     display: flex;
-    height: 42%;
+    height: 12%;
     width: 120%;
     flex-direction: row;
     align-items: center;
@@ -203,7 +206,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    margin-left: -4%;
 }
 
 .scissor {
